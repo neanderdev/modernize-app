@@ -1,0 +1,155 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.4rem;
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: center;
+
+  transition: background-color 500ms;
+}
+
+.btn.small {
+  padding: 0.6rem 1.2rem;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.btn.medium {
+  padding: 0.8rem 1.2rem;
+}
+
+.btn.large {
+  padding: 1.2rem;
+}
+
+.btn.primary {
+  background-color: var(--color-blue-100);
+  color: #ffffff;
+}
+
+.btn.primary:hover {
+  background-color: var(--color-blue-80);
+}
+
+.btn.primary:active {
+  background-color: var(--color-blue-90);
+}
+
+.btn.primary:disabled {
+  background-color: var(--color-gray-50);
+
+  cursor: not-allowed;
+}
+
+.btn.primary:focus {
+  background-color: var(--color-blue-100);
+}
+
+.btn.secondary {
+  background-color: var(--color-blue-40);
+  color: var(--color-blue-100);
+}
+
+.btn.secondary:hover {
+  background-color: var(--color-blue-30);
+}
+
+.btn.secondary:active {
+  background-color: var(--color-blue-40);
+}
+
+.btn.secondary:disabled {
+  background-color: var(--color-gray-50);
+
+  cursor: not-allowed;
+}
+
+.btn.secondary:focus {
+  background-color: var(--color-blue-40);
+}
+
+.btn.destructive {
+  background-color: var(--color-red-100);
+  color: #ffffff;
+}
+
+.btn.destructive:hover {
+  background-color: var(--color-red-80);
+}
+
+.btn.destructive:active {
+  background-color: var(--color-red-90);
+}
+
+.btn.destructive:disabled {
+  background-color: var(--color-gray-50);
+
+  cursor: not-allowed;
+}
+
+.btn.destructive:focus {
+  background-color: var(--color-red-100);
+}
+
+.btn.destructive-secondary {
+  background-color: var(--color-red-30);
+  color: var(--color-red-100);
+}
+
+.btn.destructive-secondary:hover {
+  background-color: var(--color-red-40);
+}
+
+.btn.destructive-secondary:active {
+  background-color: var(--color-red-30);
+}
+
+.btn.destructive-secondary:disabled {
+  background-color: var(--color-gray-50);
+
+  cursor: not-allowed;
+}
+
+.btn.destructive-secondary:focus {
+  background-color: var(--color-red-30);
+}
+
+.btn.white {
+  background-color: #ffffff;
+  color: var(--color-blue-100);
+
+  border: 0.1rem solid var(--color-blue-40);
+}
+
+.btn.white:hover {
+  background-color: var(--color-gray-30);
+}
+
+.btn.white:active {
+  background-color: #ffffff;
+}
+
+.btn.white:disabled {
+  background-color: var(--color-gray-50);
+
+  cursor: not-allowed;
+}
+
+.btn.white:focus {
+  background-color: #ffffff;
+}
+
+@media screen and (max-width: 520px) {
+  .btn {
+    width: 100%;
+  }
+}

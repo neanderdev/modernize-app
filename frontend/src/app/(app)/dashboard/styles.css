@@ -1,0 +1,332 @@
+.header-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-admin h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 3.6rem;
+  text-align: left;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+
+.orders-over-time-and-last-days-sales {
+  height: 48rem;
+
+  display: grid;
+  grid-template-columns: 1fr 28rem;
+  gap: 2.4rem;
+}
+
+.orders-over-time,
+.last-days-sales,
+.recent-transactions,
+.top-products-by-units-sold {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  background-color: #ffffff;
+
+  border-radius: 0.6rem;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-card span {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+select {
+  width: 18rem;
+
+  padding: 1rem 1.2rem;
+
+  background-color: transparent;
+  color: var(--color-gray-80);
+
+  outline: 0;
+  border: 0.1rem solid var(--color-blue-40);
+  border-radius: 0.4rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.chart-legends {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-legend {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.stat-legend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.stat-legend h6 {
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+.stat-legend span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.legend-square {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.square {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  border-radius: 0.2rem;
+}
+
+.square.may-23 {
+  background-color: var(--color-blue-40);
+}
+
+.square.may-24 {
+  background-color: var(--color-blue-100);
+}
+
+.legend-square span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.recent-transactions-and-top-products-by-units-sold {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+table {
+  width: 100%;
+
+  display: table;
+
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 0.1rem solid var(--color-gray-40);
+}
+
+thead tr th {
+  padding: 1rem 0;
+}
+
+thead tr th div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.recent-transactions table thead tr th:nth-child(3) div,
+.recent-transactions table thead tr th:nth-child(4) div,
+.top-products-by-units-sold table thead tr th:nth-child(2) div,
+.top-products-by-units-sold table thead tr th:nth-child(3) div {
+  justify-content: center;
+}
+
+thead tr th div span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+tbody tr td {
+  padding: 1rem 0;
+}
+
+tbody tr td div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.recent-transactions table tbody tr td:nth-child(3) div,
+.recent-transactions table tbody tr td:nth-child(4) div,
+.top-products-by-units-sold table tbody tr td:nth-child(2) div,
+.top-products-by-units-sold table tbody tr td:nth-child(3) div {
+  justify-content: center;
+}
+
+.title-head {
+  display: none;
+
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+tbody tr td div span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+.name span,
+.name div span {
+  font-weight: 500;
+}
+
+.name div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.name div img {
+  width: 3.6rem;
+  height: 3.6rem;
+
+  border-radius: 0.4rem;
+
+  object-fit: cover;
+}
+
+@media screen and (max-width: 980px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .orders-over-time-and-last-days-sales,
+  .recent-transactions-and-top-products-by-units-sold {
+    height: 100%;
+
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .stats {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr td {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .recent-transactions table tbody tr td:nth-child(1) div,
+  .recent-transactions table tbody tr td:nth-child(2) div,
+  .recent-transactions table tbody tr td:nth-child(3) div,
+  .recent-transactions table tbody tr td:nth-child(4) div,
+  .top-products-by-units-sold table tbody tr td:nth-child(1) div,
+  .top-products-by-units-sold table tbody tr td:nth-child(2) div,
+  .top-products-by-units-sold table tbody tr td:nth-child(3) div,
+  .top-products-by-units-sold table tbody tr td:nth-child(4) div {
+    justify-content: space-between;
+  }
+
+  .title-head {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header-admin {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .header-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .buttons-wrapper {
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .chart-legends {
+    flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  select {
+    width: 100%;
+  }
+}

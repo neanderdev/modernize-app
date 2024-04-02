@@ -1,0 +1,73 @@
+.drag-and-drop-box {
+  width: 100%;
+  height: 16rem;
+
+  margin: 0 auto;
+
+  display: inline-block;
+
+  position: relative;
+
+  border: 0.2rem dashed var(--color-gray-60);
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+}
+
+.drag-and-drop-box input {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  opacity: 0;
+}
+
+.drag-and-drop-box-cta {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.drag-and-drop-box-cta span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.files {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.file {
+  border-radius: 0.4rem;
+
+  object-fit: cover;
+}
+
+.file.small {
+  width: 8rem;
+  height: 8rem;
+}
+
+.file.medium {
+  width: 12rem;
+  height: 12rem;
+}
+
+.file.large {
+  width: 16rem;
+  height: 16rem;
+}

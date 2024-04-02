@@ -1,0 +1,26 @@
+.body {
+  min-height: 100vh;
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+main {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}

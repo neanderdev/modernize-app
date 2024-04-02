@@ -1,0 +1,156 @@
+header {
+  padding: 1.2rem 2.4rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #ffffff;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.open-sidebar {
+  display: none;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+.open-sidebar svg {
+  color: var(--color-gray-70);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.logo img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.logo h4 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 4.4rem;
+  text-align: center;
+}
+
+.info-user {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.info-user .chat-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+.info-user .chat-button svg {
+  color: var(--color-gray-70);
+}
+
+.info-user .notifications-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+.info-user .notifications-button svg {
+  color: var(--color-gray-70);
+}
+
+.info-user .notifications-button span {
+  padding: 0.3rem 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: -1rem;
+  right: -0.4rem;
+
+  background-color: var(--color-blue-100);
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.info-user .user-button {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+.info-user .user-button img {
+  width: 4rem;
+  height: 4rem;
+
+  border-radius: 2rem;
+}
+
+.info-user .user-button span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.info-user .user-button svg {
+  color: var(--color-gray-70);
+}
+
+@media screen and (max-width: 1024px) {
+  .open-sidebar {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .logo h4,
+  .search-wrapper,
+  .info-user .user-button span {
+    display: none;
+  }
+}

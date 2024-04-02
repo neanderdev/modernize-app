@@ -1,0 +1,49 @@
+.select-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.select-wrapper label {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.select-wrapper select {
+  background-color: transparent;
+  color: var(--color-gray-60);
+
+  outline: 0;
+  border: 0.1rem solid var(--color-blue-40);
+  border-radius: 0.4rem;
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.select-wrapper select.small {
+  padding: 0.8rem 1.2rem;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.select-wrapper select.medium {
+  padding: 1.2rem;
+}
+
+.select-wrapper select.large {
+  padding: 1.6rem 1.2rem;
+}
+
+.select-wrapper select:active,
+.select-wrapper select:focus {
+  color: var(--color-gray-100);
+}

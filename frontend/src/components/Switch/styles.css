@@ -1,0 +1,133 @@
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.switch {
+  display: inline-block;
+
+  position: relative;
+}
+
+.switch.small {
+  width: 3.4rem;
+  height: 2rem;
+}
+
+.switch.medium {
+  width: 4.4rem;
+  height: 2.4rem;
+}
+
+.switch.large {
+  width: 4.8rem;
+  height: 2.8rem;
+}
+
+.switch input {
+  width: 0;
+  height: 0;
+
+  opacity: 0;
+}
+
+.switch-slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background-color: var(--color-blue-40);
+
+  border-radius: 1.6rem;
+
+  cursor: pointer;
+
+  transition: 0.4s;
+
+  -webkit-transition: 0.4s;
+}
+
+.switch-slider:before {
+  content: "";
+
+  position: absolute;
+  bottom: 0.4rem;
+  left: 0.4rem;
+
+  background-color: #ffffff;
+
+  border-radius: 50%;
+
+  transition: 0.4s;
+
+  -webkit-transition: 0.4s;
+}
+
+.switch-slider.small:before {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.switch-slider.medium:before {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.switch-slider.large:before {
+  width: 2rem;
+  height: 2rem;
+}
+
+.switch input:checked + .switch-slider {
+  background-color: var(--color-blue-100);
+}
+
+.switch input:focus + .switch-slider {
+  box-shadow: 0 0 0.1rem var(--color-blue-100);
+}
+
+.switch.small input:checked + .switch-slider.small:before {
+  transform: translateX(1.4rem);
+
+  -webkit-transform: translateX(1.4rem);
+  -ms-transform: translateX(1.4rem);
+}
+
+.switch.medium input:checked + .switch-slider.medium:before,
+.switch.large input:checked + .switch-slider.large:before {
+  transform: translateX(2rem);
+
+  -webkit-transform: translateX(2rem);
+  -ms-transform: translateX(2rem);
+}
+
+.switch-label {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.switch-label .switch-label-title {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2.4rem;
+}
+
+.switch-label .switch-label-description {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+.switch-wrapper span {
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+}

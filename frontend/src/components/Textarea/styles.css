@@ -1,0 +1,57 @@
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.textarea-wrapper label {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.textarea-wrapper textarea {
+  background-color: transparent;
+  color: var(--color-gray-60);
+
+  outline: 0;
+  border: 0.1rem solid var(--color-blue-40);
+  border-radius: 0.4rem;
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+
+  resize: none;
+}
+
+.textarea-wrapper textarea.small {
+  height: 8rem;
+
+  padding: 0.6rem 1.2rem;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.textarea-wrapper textarea.medium {
+  height: 10rem;
+
+  padding: 0.8rem 1.2rem;
+}
+
+.textarea-wrapper textarea.large {
+  height: 12rem;
+
+  padding: 1.2rem;
+}
+
+.textarea-wrapper textarea:active,
+.textarea-wrapper textarea:focus {
+  color: var(--color-gray-100);
+}

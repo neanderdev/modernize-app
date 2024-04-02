@@ -1,0 +1,59 @@
+.badge {
+  padding: 0.4rem 1.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+
+  border-radius: 0.4rem;
+}
+
+.badge.paid {
+  background-color: var(--color-green-40);
+  color: var(--color-green-100);
+}
+
+.badge.pending {
+  background-color: var(--color-gray-40);
+  color: var(--color-gray-80);
+}
+
+.badge.expired {
+  background-color: var(--color-gray-40);
+  color: var(--color-gray-80);
+}
+
+.badge.active {
+  background-color: var(--color-green-40);
+  color: var(--color-green-100);
+}
+
+.badge.completed {
+  background-color: var(--color-green-40);
+  color: var(--color-green-100);
+}
+
+.badge.ready {
+  background-color: var(--color-yellow-100);
+  color: #ffffff;
+}
+
+.badge.shipped {
+  background-color: var(--color-gray-80);
+  color: #ffffff;
+}
+
+.badge.received {
+  background-color: var(--color-blue-100);
+  color: #ffffff;
+}
+
+.badge.increase {
+  background-color: var(--color-green-40);
+  color: var(--color-green-100);
+}

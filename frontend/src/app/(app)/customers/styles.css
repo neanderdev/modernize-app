@@ -1,0 +1,195 @@
+.header-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-admin h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 3.6rem;
+  text-align: left;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.customers {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  background-color: #ffffff;
+
+  border-radius: 0.6rem;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filters,
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+select {
+  width: 18rem;
+
+  padding: 1rem 1.2rem;
+
+  background-color: transparent;
+  color: var(--color-gray-60);
+
+  outline: 0;
+  border: 0.1rem solid var(--color-blue-40);
+  border-radius: 0.4rem;
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+
+  display: table;
+
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 0.1rem solid var(--color-gray-40);
+}
+
+thead tr th {
+  padding: 1rem 0;
+}
+
+thead tr th div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.checkbox-all {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+thead tr th div span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+tbody tr td {
+  padding: 1rem 0;
+}
+
+tbody tr td div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title-head {
+  display: none;
+
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+tbody tr td div span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.name-container img {
+  width: 4.8rem;
+  height: 4.8rem;
+
+  border-radius: 2.4rem;
+
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  thead {
+    display: none;
+  }
+
+  tbody tr td {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  tbody tr td:nth-child(1) div,
+  tbody tr td:nth-child(2) div,
+  tbody tr td:nth-child(3) div,
+  tbody tr td:nth-child(4) div {
+    justify-content: space-between;
+  }
+
+  .title-head {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header-admin {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .header-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .buttons-wrapper {
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .filters,
+  select {
+    width: 100%;
+  }
+}

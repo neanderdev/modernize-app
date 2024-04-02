@@ -1,0 +1,36 @@
+.page-number {
+  width: 4rem;
+  height: 4rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-gray-40);
+
+  outline: 0;
+  border: 0;
+  border-radius: 0.4rem;
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: right;
+
+  transition: background-color 500ms;
+}
+
+.page-number:hover {
+  background-color: var(--color-gray-50);
+}
+
+.page-number.active {
+  background-color: var(--color-blue-90);
+  color: #ffffff;
+
+  cursor: not-allowed;
+}
+
+.page-number.active:hover {
+  background-color: var(--color-blue-100);
+}

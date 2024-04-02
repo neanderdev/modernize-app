@@ -1,0 +1,569 @@
+.header-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-admin h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 3.6rem;
+  text-align: left;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.reports {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.customer-growth {
+  height: 42rem;
+
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  background-color: #ffffff;
+
+  border-radius: 0.6rem;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-card span {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+select {
+  width: 18rem;
+
+  padding: 1rem 1.2rem;
+
+  background-color: transparent;
+  color: var(--color-gray-80);
+
+  outline: 0;
+  border: 0.1rem solid var(--color-blue-40);
+  border-radius: 0.4rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.chart-legends {
+  display: flex;
+  justify-content: space-between;
+}
+
+.legend {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.legend-square {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.square {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  border-radius: 0.2rem;
+}
+
+.square.returning-customers {
+  background-color: var(--color-gray-50);
+}
+
+.square.new-customers {
+  background-color: var(--color-blue-100);
+}
+
+.legend-square span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+
+.sales-goal-and-conversion-rate-and-average-order-value,
+.sales-goal-and-conversion-rate {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.sales-goal,
+.conversion-rate,
+.average-order-value {
+  height: 36rem;
+
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  background-color: #ffffff;
+
+  border-radius: 0.6rem;
+}
+
+.footer-legends {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.footer-legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-legend .name {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.footer-legend .value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: right;
+}
+
+.legend-value {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.legend-value p {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.legend-value p strong {
+  color: var(--color-gray-100);
+
+  font-weight: 700;
+}
+
+.customer-demographics-and-visits-by-device-and-online-sessions,
+.store-funnel-and-age-distribution {
+  height: 40rem;
+
+  display: grid;
+  grid-template-columns: 1fr 26rem;
+  gap: 2.4rem;
+}
+
+.visits-by-device-and-online-sessions {
+  display: grid;
+  grid-template-rows: 1fr 15rem;
+  gap: 2.4rem;
+}
+
+.customer-demographics,
+.visits-by-device,
+.online-sessions,
+.top-customers,
+.top-products,
+.store-funnel,
+.age-distribution {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  background-color: #ffffff;
+
+  border-radius: 0.6rem;
+}
+
+.devices {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.device {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.device span {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.device span svg {
+  color: var(--color-gray-80);
+}
+
+.device strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: right;
+}
+
+.online-sessions-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.online-sessions-info strong {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2.8rem;
+  text-align: left;
+}
+
+.online-sessions-info strong svg {
+  color: var(--color-green-90);
+}
+
+.online-sessions-info span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.top-customers-and-top-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+table {
+  width: 100%;
+
+  display: table;
+
+  border-collapse: collapse;
+}
+
+tr {
+  border-bottom: 0.1rem solid var(--color-gray-40);
+}
+
+thead tr th {
+  padding: 1rem 0;
+}
+
+thead tr th div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+thead tr th div span {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+tbody tr td {
+  padding: 1rem 0;
+}
+
+tbody tr td div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.title-head {
+  display: none;
+
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+tbody tr td div span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+}
+
+.name div {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.name div img {
+  width: 3.6rem;
+  height: 3.6rem;
+
+  border-radius: 0.4rem;
+
+  object-fit: cover;
+}
+
+.name div img.avatar {
+  border-radius: 1.8rem;
+}
+
+.name div span {
+  font-weight: 500;
+}
+
+.store-funnel p {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.store-funnel p strong {
+  color: var(--color-gray-100);
+
+  font-weight: 700;
+}
+
+.age-distribution .legends {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.age-distribution .legend {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.age-distribution .legend div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.square {
+  width: 1.2rem;
+  height: 1.2rem;
+
+  border-radius: 0.2rem;
+}
+
+.square.blue {
+  background-color: var(--color-blue-100);
+}
+
+.square.yellow {
+  background-color: var(--color-yellow-90);
+}
+
+.square.orange {
+  background-color: var(--color-yellow-100);
+}
+
+.square.green {
+  background-color: var(--color-green-100);
+}
+
+.age-distribution a {
+  color: var(--color-blue-100);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+@media screen and (max-width: 768px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sales-goal-and-conversion-rate-and-average-order-value,
+  .sales-goal-and-conversion-rate,
+  .top-customers-and-top-products {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
+  }
+
+  .sales-goal-and-conversion-rate {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .customer-demographics-and-visits-by-device-and-online-sessions,
+  .store-funnel-and-age-distribution {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.6rem;
+  }
+
+  .customer-demographics-and-visits-by-device-and-online-sessions,
+  .store-funnel-and-age-distribution {
+    height: 100%;
+  }
+
+  .customer-demographics,
+  .store-funnel {
+    height: 46rem;
+  }
+
+  .visits-by-device-and-online-sessions {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header-admin {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .header-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .buttons-wrapper {
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .stats {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sales-goal-and-conversion-rate {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sales-goal,
+  .conversion-rate,
+  .average-order-value {
+    height: 100%;
+  }
+
+  .visits-by-device-and-online-sessions {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .customer-growth .chart-legends .legend {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.6rem;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody tr td {
+    padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  tbody tr td:nth-child(1) div,
+  tbody tr td:nth-child(2) div,
+  tbody tr td:nth-child(3) div {
+    justify-content: space-between;
+  }
+
+  .title-head {
+    display: block;
+  }
+
+  select {
+    width: 100%;
+  }
+}

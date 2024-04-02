@@ -1,0 +1,49 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.input-wrapper label {
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.input-wrapper input {
+  background-color: transparent;
+  color: var(--color-gray-60);
+
+  outline: 0;
+  border: 0.1rem solid var(--color-blue-40);
+  border-radius: 0.4rem;
+
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.input-wrapper input.small {
+  padding: 0.6rem 1.2rem;
+
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+
+.input-wrapper input.medium {
+  padding: 0.8rem 1.2rem;
+}
+
+.input-wrapper input.large {
+  padding: 1.2rem;
+}
+
+.input-wrapper input:active,
+.input-wrapper input:focus {
+  color: var(--color-gray-100);
+}

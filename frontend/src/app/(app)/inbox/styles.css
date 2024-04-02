@@ -1,0 +1,410 @@
+.header-admin {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-admin h5 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 3.6rem;
+  text-align: left;
+}
+
+.buttons-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.inbox {
+  background-color: #ffffff;
+
+  display: grid;
+  grid-template-columns: 36rem 1fr;
+
+  border-radius: 0.6rem;
+}
+
+.conversations {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  border-right: 0.1rem solid var(--color-gray-40);
+}
+
+.conversations-header {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.header-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-card span {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.conversations-header .search-wrapper input {
+  width: 100%;
+}
+
+.contacts {
+  height: 60rem;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+}
+
+.contact {
+  padding: 1.6rem 2.4rem;
+
+  display: flex;
+  gap: 0.6rem;
+
+  cursor: pointer;
+
+  transition: background-color 500ms;
+}
+
+.contact:hover {
+  background-color: var(--color-gray-30);
+}
+
+.contact.active {
+  background-color: var(--color-blue-30);
+}
+
+.avatar-user {
+  position: relative;
+}
+
+.avatar-user img {
+  width: 4.8rem;
+  height: 4.8rem;
+
+  border-radius: 2.4rem;
+
+  object-fit: cover;
+}
+
+.online {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  position: absolute;
+  bottom: 0;
+  right: -0.2rem;
+
+  background-color: var(--color-green-90);
+
+  border: 0.3rem solid #ffffff;
+  border-radius: 0.8rem;
+}
+
+.contact-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.contact-info-header {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.contact-info-header strong {
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.notifications {
+  padding: 0.2rem 0.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-blue-100);
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.6rem;
+  text-align: center;
+}
+
+.time {
+  margin-left: auto;
+
+  color: var(--color-gray-60);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: right;
+}
+
+.contact-info p {
+  max-width: 24rem;
+
+  color: var(--color-gray-80);
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  overflow: hidden;
+}
+
+.chat {
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info-user-chat {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.info-user-chat strong {
+  font-weight: 700;
+  font-style: normal;
+  line-height: 2.4rem;
+  text-align: left;
+}
+
+.info-user-chat .online {
+  width: 1.6rem;
+  height: 1.6rem;
+
+  position: relative;
+
+  background-color: var(--color-green-90);
+
+  border-radius: 0.8rem;
+}
+
+.actions-button-chat {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.actions-button-chat button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+.actions-button-chat button svg {
+  color: var(--color-gray-70);
+}
+
+.chat-messages {
+  height: 60rem;
+
+  padding: 0 1.2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+
+  overflow-y: auto;
+}
+
+.chat-message {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.8rem;
+}
+
+.chat-message.to {
+  justify-content: start;
+}
+
+.chat-message.me {
+  flex-direction: row-reverse;
+  justify-content: end;
+}
+
+.chat-message img {
+  width: 3.6rem;
+  height: 3.6rem;
+
+  border-radius: 1.8rem;
+
+  object-fit: cover;
+}
+
+.message-info {
+  max-width: 75%;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.message-info p {
+  padding: 0.8rem;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+
+  border-radius: 0.4rem;
+}
+
+.chat-message.to .message-info p {
+  background-color: var(--color-blue-100);
+  color: #ffffff;
+}
+
+.chat-message.me .message-info p {
+  background-color: var(--color-gray-40);
+  color: var(--color-gray-100);
+}
+
+.message-info span {
+  color: var(--color-gray-60);
+
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.6rem;
+  text-align: left;
+}
+
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.images img {
+  width: 9.6rem;
+  height: 9.6rem;
+
+  border-radius: 0.4rem;
+
+  object-fit: cover;
+}
+
+.message-send {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.message-send input {
+  padding: 1.2rem;
+
+  flex: 1;
+
+  background-color: transparent;
+  color: var(--color-gray-60);
+
+  outline: 0;
+  border: 0;
+
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.actions-button-message-send {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.send-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  outline: 0;
+  border: 0;
+}
+
+.send-file svg {
+  color: var(--color-gray-70);
+}
+
+@media screen and (max-width: 1024px) {
+  .inbox {
+    grid-template-columns: 34rem 1fr;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .header-admin {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .header-card {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+
+  .buttons-wrapper {
+    width: 100%;
+
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0.8rem;
+  }
+}
